@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Worksheet Interior Template</title>
+<meta name="kdp:template" content="worksheet">
+<meta name="kdp:title" content="The Weekly Gentle Plan">
+<meta name="kdp:subtitle" content="A Low-Energy Planner for Real Life">
+<meta name="kdp:author" content="Your Name Here">
+<meta name="kdp:publisher" content="Independently Published">
+<meta name="kdp:year" content="2026">
+<meta name="kdp:isbn" content="[ISBN will appear here]">
+
+<!--
+  WORKSHEET TEMPLATE — how to use it
+
+  1. Fill in the book details in the <meta> tags above.
+  2. Edit the front matter below (title page, copyright page, how-to-use).
+  3. Build your workbook between the BOOK BODY STARTS HERE marker and
+     </body>. Give every worksheet the front-page class so it starts on
+     a fresh page.
+  4. Run:  python3 build.py --template worksheet --trim 8.5x11
+  5. Your print-ready PDF lands in build/worksheet-8.5x11.pdf
+
+  Class quick reference:
+    .exercise   one prompt + writing space, never split across pages
+    .prompt     the question or instruction line
+    .answer-line  a single ruled line for writing (stack as many as you like)
+    .field      a labeled box to write or draw in
+    ul.checklist  checkboxes
+    .space-1/.space-2/.space-4  fixed blank gaps (1.5em / 3em / 6em)
+-->
+</head>
+<body>
+
+<!-- ==================== FRONT MATTER ==================== -->
+
+<div class="front-page">
+  <div class="title-block">
+    <div class="title">The Weekly Gentle Plan</div>
+    <p class="subtitle">A Low-Energy Planner for Real Life</p>
+    <div class="byline"><p class="author">Your Name Here</p></div>
+  </div>
+</div>
+
+<div class="front-page">
+  <div class="copyright-block">
+    <p>The Weekly Gentle Plan</p>
+    <p>Copyright &#169; 2026 Your Name Here</p>
+    <p>All rights reserved. Permission is granted to the purchaser to print
+    and photocopy the worksheets in this book for personal use.</p>
+    <p>This planner is for organization and motivation only; it is not a
+    substitute for professional advice or care.</p>
+    <p>[ISBN will appear here]</p>
+    <p>Independently Published</p>
+    <p>First edition, [Month] [Year]</p>
+  </div>
+</div>
+
+<div class="front-page">
+  <div class="toc-heading">How to use this book</div>
+  <p class="lead">There is no wrong way to use a gentle plan. One worksheet a
+  week counts. One line counts. A page you fill half of and abandon also
+  counts, because a half-plan that exists beats a perfect plan that
+  doesn't.</p>
+  <div class="tip">
+    <span class="label">Tip</span>
+    <p>Pick the worksheet you most want to do, not the one you most want to
+    have done. Wanting is the fuel here.</p>
+  </div>
+</div>
+
+<!-- BOOK BODY STARTS HERE -->
+
+<div class="front-page exercise">
+<h1 class="chapter"><span class="ch-number">Worksheet 1</span>This Week In One Look</h1>
+
+<p class="prompt">The three things that would make this week a quiet success
+if they happened:</p>
+<div class="answer-line"></div>
+<div class="answer-line"></div>
+<div class="answer-line"></div>
+
+<p class="prompt" style="margin-top:1.2em">Everything else goes in the
+background pile. That pile is allowed to wait.</p>
+
+<div class="field">
+  <span class="field-label">Background pile (dots and doodles welcome)</span>
+  <div class="space-4"></div>
+</div>
+
+<ul class="checklist">
+  <li>Choose my quiet-success item number one</li>
+  <li>Put it where I cannot avoid seeing it</li>
+  <li>Forgive myself in advance for any week this plan goes unread</li>
+</ul>
+</div>
+
+<div class="front-page exercise">
+<h1 class="chapter"><span class="ch-number">Worksheet 2</span>The 15-Minute Version</h1>
+
+<p class="prompt">One task I keep putting off, described in four plain
+words or fewer:</p>
+<div class="answer-line"></div>
+<div class="answer-line"></div>
+
+<p class="prompt" style="margin-top:1.2em">If I only had 15 minutes today,
+which tiny sliver of it would I start?</p>
+<div class="field">
+  <span class="field-label">Tiny sliver</span>
+  <div class="space-2"></div>
+</div>
+
+<p class="prompt">Where the 15 minutes will happen (place matters more than
+time):</p>
+<div class="answer-line"></div>
+<div class="answer-line"></div>
+
+<ul class="checklist">
+  <li>Set a timer and start</li>
+  <li>Stop when the timer rings, even if it is going well</li>
+  <li>Scribble one word about how that felt:</li>
+</ul>
+<div class="answer-line"></div>
+</div>
+
+<div class="front-page exercise">
+<h1 class="chapter"><span class="ch-number">Worksheet 3</span>Energy Weather Report</h1>
+
+<p class="prompt">This week's energy, described as weather:</p>
+<div class="field">
+  <span class="field-label">e.g. mostly cloudy, one wintery afternoon, brief sun mid-week</span>
+  <div class="space-2"></div>
+</div>
+
+<p class="prompt">Tasks that fit this week's weather (low-energy versions
+allowed, low-energy versions encouraged):</p>
+<div class="answer-line"></div>
+<div class="answer-line"></div>
+<div class="answer-line"></div>
+<div class="answer-line"></div>
+
+<p class="prompt" style="margin-top:1.2em">Something on this list that can
+honestly wait until next week:</p>
+<div class="answer-line"></div>
+
+<div class="space-2"></div>
+<ul class="checklist">
+  <li>Moved one thing to next week without guilt</li>
+  <li>Chose one sunny-window task for my best energy day</li>
+</ul>
+</div>
+
+</body>
+</html>

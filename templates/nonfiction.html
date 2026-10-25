@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nonfiction Interior Template</title>
+<meta name="kdp:template" content="nonfiction">
+<meta name="kdp:title" content="The Massive AI Manual">
+<meta name="kdp:subtitle" content="Plain-English AI for Absolute Beginners">
+<meta name="kdp:author" content="Your Name Here">
+<meta name="kdp:publisher" content="Independently Published">
+<meta name="kdp:year" content="2026">
+<meta name="kdp:isbn" content="[ISBN will appear here]">
+
+<!--
+  NONFICTION TEMPLATE — how to use it
+
+  1. Fill in the book details in the <meta> tags above.
+  2. Edit the front matter below (title page, copyright page).
+     The table of contents page is generated for you: build.py reads your
+     chapter headings (h1.chapter) and fills in real page numbers
+     automatically, so you never have to update the TOC by hand.
+  3. Paste your manuscript between the BOOK BODY STARTS HERE marker and
+     </body>. Start each new chapter with an <h1 class="chapter">.
+  4. Run:  python3 build.py --template nonfiction --trim 6x9
+  5. Your print-ready PDF lands in build/nonfiction-6x9.pdf
+
+  Class quick reference:
+    .lead       short intro paragraph after a chapter heading
+    .tip / .note  boxed callouts ("Tip" / "Note")
+    blockquote  quoted material
+    table       simple styled table (see sample below)
+    pre / code  sample commands or code
+-->
+</head>
+<body>
+
+<!-- ==================== FRONT MATTER ==================== -->
+
+<div class="front-page">
+  <div class="title-block">
+    <div class="title">The Massive AI Manual</div>
+    <p class="subtitle">Plain-English AI for Absolute Beginners</p>
+    <div class="byline"><p class="author">Your Name Here</p></div>
+  </div>
+</div>
+
+<div class="front-page">
+  <div class="copyright-block">
+    <p>The Massive AI Manual</p>
+    <p>Copyright &#169; 2026 Your Name Here</p>
+    <p>All rights reserved. No part of this book may be reproduced in any form
+    without written permission from the author, except for brief quotations in
+    reviews.</p>
+    <p>This book is for education only and is not professional, legal, or
+    technical advice.</p>
+    <p>[ISBN will appear here]</p>
+    <p>Independently Published</p>
+    <p>First edition, [Month] [Year]</p>
+  </div>
+</div>
+
+<div class="front-page">
+  <div class="toc-heading">Contents</div>
+  <!-- build.py replaces this placeholder with your chapter list and
+       real page numbers -->
+  <div id="toc-placeholder"></div>
+</div>
+
+<!-- BOOK BODY STARTS HERE -->
+
+<section>
+<h1 class="chapter">Introduction: AI, Explained Like a Friend Would</h1>
+
+<p class="lead">This book assumes zero experience. You do not need to be
+"technical." If you can send an email, you already have every skill this book
+builds on.</p>
+
+<p>Artificial intelligence has a reputation problem. Half the world talks
+about it like magic, and the other half talks about it like a courtroom. Both
+voices are loud. Neither is very useful when you just want to get something
+done before dinner.</p>
+
+<p>So we will do something unglamorous: we will use the tools, carefully, one
+step at a time, and keep noticing what they are actually good at. By the end
+of the first chapter you will have used an AI assistant for three real
+tasks, and you will be able to explain to a friend exactly where it helped
+and where it didn't.</p>
+
+<div class="tip">
+  <span class="label">Tip</span>
+  <p>There are no wrong questions in this book. If a term confuses you, that
+  is the author's problem, not yours. Every term gets defined the first time
+  it appears.</p>
+</div>
+
+</section>
+
+<section>
+<h1 class="chapter">Chapter 1: What AI Actually Is</h1>
+
+<p class="lead">Nine pages of definition could be replaced by one honest
+sentence, so here it is: an AI assistant is very good at guessing what words
+usually come next.</p>
+
+<p>That sounds small. It is not small. Most of writing, summarizing,
+translating, and explaining is exactly that: producing language that fits
+what came before. The surprise of the last few years is how far a machine
+can get with that one skill.</p>
+
+<p>But knowing the limitation matters more than the party trick. A language
+model does not "know" your bank balance, your medical history, or whether the
+store is open on Sunday. It knows what people usually write, and sometimes
+what people usually write is wrong.</p>
+
+<h2>1.1 The three things it does well</h2>
+
+<ul>
+  <li><strong>Summarizing.</strong> Give it a long, boring document and it
+  will hand back the short version, usually accurately.</li>
+  <li><strong>Explaining.</strong> Ask it to explain anything at a level you
+  choose, from "explained to a friend" down to "explained to me like I have
+  five minutes and no patience."</li>
+  <li><strong>Drafting.</strong> Emails, outlines, lists of questions for a
+  doctor's appointment, recipes from the contents of your fridge.</li>
+</ul>
+
+<h2>1.2 The two things it does badly</h2>
+
+<ol>
+  <li><strong>Facts without a source.</strong> It will answer confidently
+  even when nobody wrote the answer down anywhere.</li>
+  <li><strong>Math with many steps.</strong> It gets better every year, and
+  it is still reasonable to double-check anything important with a
+  calculator.</li>
+</ol>
+
+<blockquote>
+  <p>"Treat an AI answer like advice from a smart friend who has read a lot
+  but slept very little lately: often useful, occasionally nonsense, always
+  worth a second look on anything that matters."</p>
+</blockquote>
+
+</section>
+
+<section>
+<h1 class="chapter">Chapter 2: Asking Better Questions</h1>
+
+<p class="lead">The single habit that separates people who get good results
+from people who get blamed results: tell the AI who it is, what it is
+helping with, and what "good" looks like.</p>
+
+<p>Compare these two requests. "Write something about snakes" will produce
+something generic enough to forget by dinner. But this next request
+produces something you can actually use:</p>
+
+<pre>Write a 5-sentence explanation of why snakes shed their skin,
+for a curious 8-year-old. Use one comparison to something
+a kid has seen, like socks. No puns.</pre>
+
+<p>Length, audience, tone, and one example to copy. That is the whole recipe,
+and it works in every AI tool you will ever open.</p>
+
+<h2>2.1 A tiny prompt pattern you can reuse forever</h2>
+
+<table>
+  <tr><th>Ingredient</th><th>Example</th><th>Why it helps</th></tr>
+  <tr><td>Role</td><td>"You are a friendly writing coach"</td>
+      <td>Sets the tone and vocabulary</td></tr>
+  <tr><td>Task</td><td>"make my email kind but firm"</td>
+      <td>One job, clearly named</td></tr>
+  <tr><td>Audience</td><td>"for my landlord"</td>
+      <td>Controls formality</td></tr>
+  <tr><td>Format</td><td>"under 120 words"</td>
+      <td>Keeps results usable</td></tr>
+</table>
+
+<div class="note">
+  <span class="label">Note</span>
+  <p>The pattern is not magic. It just removes guesswork, and removing
+  guesswork is most of what we call "being good with AI."</p>
+</div>
+
+</section>
+
+<section>
+<h1 class="chapter">Chapter 3: Your First Week With AI</h1>
+
+<p class="lead">Do not start with a grand project. Start with seven small,
+slightly annoying chores and let the tool carry one of them each day.</p>
+
+<ul class="checklist">
+  <li>Monday: summarize a long email thread before answering it.</li>
+  <li>Tuesday: draft the thank-you note that you have owed since March.</li>
+  <li>Wednesday: turn the week's appointments into a one-line schedule.</li>
+  <li>Thursday: ask for three meal ideas from what's actually in the fridge.</li>
+  <li>Friday: have it explain one word from the news like a friend would.</li>
+  <li>Saturday: plan tomorrow's errands in the order you would truly do them.</li>
+  <li>Sunday: notice one place the AI was wrong, and smile &#8212; that
+  noticing is the whole skill.</li>
+</ul>
+
+<p>After a week you will have an honest, personal sense of what this
+technology does for someone exactly like you, which is worth more than
+ten books of predictions, including this one.</p>
+
+</section>
+
+</body>
+</html>
