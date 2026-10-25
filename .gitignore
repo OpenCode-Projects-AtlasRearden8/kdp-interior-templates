@@ -1,4 +1,9 @@
-__pycache__/
 *.pyc
+.env
+.env.*
 .pytest_cache/
+.venv/
+__pycache__/
 build/
+dist/*.tmp
+node_modules/
